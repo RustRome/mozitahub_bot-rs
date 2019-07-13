@@ -1,0 +1,17 @@
+[package]
+name = "mozitahub_bot-rs"
+version = "0.1.0"
+authors = ["Alessandro Cresto Miseroglio <alex179ohm@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "mozitahub"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.33.0"
+rutebot = "0.5.3"
+tokio = "0.1.22"
+futures = "0.1"
+log = "0.4.7"
