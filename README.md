@@ -30,4 +30,4 @@ Interested in getting involved? We would love to help you! For simple bug fixes,
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in Mozitahub_bot by you, shall be licensed as MIT, without any additional terms or conditions.
 
-Finally, We support the [Rust Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct)
+We support the [Rust Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct)
