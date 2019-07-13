@@ -22,10 +22,10 @@ Build and run the bot
 $ cargo run
 ```
 
-# LICENSE
+## LICENSE
 This project is licensed under the [MIT License](https://github.com/RustRome/mozitahub_bot-rs/blob/master/LICENSE)
 
-# CONTRIBUTING
+## CONTRIBUTING
 Interested in getting involved? We would love to help you! For simple bug fixes, just submit a PR with the fix and we can discuss the fix directly in the PR. If the fix is more complex, start with an issue.
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in Mozitahub_bot by you, shall be licensed as MIT, without any additional terms or conditions.
