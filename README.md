@@ -1,4 +1,4 @@
-# Telegram MozIta hub bot written in rust
+# Telegram MozIta bot written in rust
 
 Mozitahub_bot-rs is the rusty version of the [mozitahub_bot](https://github.com/MozillaItalia/mozitahub_bot) written in python.
 
