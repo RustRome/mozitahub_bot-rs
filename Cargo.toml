@@ -9,8 +9,15 @@ edition = "2018"
 name = "mozitahub"
 path = "src/main.rs"
 
+
+[lib]
+name = "mozitahub"
+path = "src/lib.rs"
+
 [dependencies]
 clap = "2.33.0"
+serde_json = "1.0.40"
+serde = "1.0.95"
 rutebot = "0.5.3"
 tokio = "0.1.22"
 futures = "0.1"

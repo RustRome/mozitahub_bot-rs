@@ -1,5 +1,9 @@
 # MozIta Telegram bot written in rust
 
+[![Build Status](https://travis-ci.org/RustRome/mozitahub_bot-rs.svg?branch=master)](https://travis-ci.org/RustRome/mozitahub_bot-rs)
+
+
+
 Mozitahub_bot-rs is the rusty version of the [mozitahub_bot](https://github.com/MozillaItalia/mozitahub_bot) written in python.
 
 ## Supported Rust Version

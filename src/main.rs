@@ -4,6 +4,7 @@ use clap::App;
 use futures::stream::Stream;
 use futures::future::Future;
 use log::info;
+use mozitahub;
 use rutebot::{
     client::Rutebot,
     responses::{Message, Update, Chat},
