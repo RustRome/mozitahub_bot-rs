@@ -4,7 +4,7 @@
 
 
 
-Mozitahub_bot-rs is the rusty version of the [mozitahub_bot](https://github.com/MozillaItalia/mozitahub_bot) written in python.
+Mozitahub_bot-rs is the rusty version of the [mozitahub_bot](https://github.com/MozillaItalia/mozitahub_bot).
 
 ## Supported Rust Version
 Mozitahub_bot is built against the latest stable, nightly, and beta Rust releases. The minimum version supported is the latest stable release (rustc 1.36.0 a53f9df32 2019-07-03).
