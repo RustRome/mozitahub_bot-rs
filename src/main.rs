@@ -2,11 +2,12 @@ use std::env;
 
 use clap::App;
 use futures::stream::Stream;
+use futures::future::Future;
 use log::info;
 use rutebot::{
     client::Rutebot,
-    requests::GetUpdates,
-    responses::{Message, Update},
+    responses::{Message, Update, Chat},
+    requests::{GetUpdates, SendMessage},
 };
 
 fn main() {
@@ -34,7 +35,9 @@ fn main() {
                         }),
                     ..
                 }) => {
-                    info!("message: {} {:?} {}", message_id, chat, text);
+                    println!("message: {} {:?} {}", message_id, chat, text);
+                    send_text(&format!("{} from Rust :)", text), &chat, &tlgrm_bot)
+
                 }
                 Err(e) => {
                     eprintln!("Update failed: {}", e);
@@ -44,4 +47,9 @@ fn main() {
             Ok(())
         });
     tokio::run(bot);
+}
+
+fn send_text(reply_text: &str, chat: &Chat, tlgm_bot: &Rutebot) {
+    let respose_message = tlgm_bot.prepare_api_request(SendMessage::new(chat.id, reply_text));
+    tokio::spawn(respose_message.send().then(|_| Ok(())));
 }
