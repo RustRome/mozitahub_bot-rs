@@ -3,12 +3,12 @@ use std::env;
 use clap::App;
 use futures::stream::Stream;
 use log::info;
+use mozitahub;
 use rutebot::{
     client::Rutebot,
     requests::GetUpdates,
     responses::{Message, Update},
 };
-use mozitahub;
 
 fn main() {
     let _matches = App::new("mozitahub")
