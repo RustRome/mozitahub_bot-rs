@@ -8,6 +8,7 @@ use rutebot::{
     requests::GetUpdates,
     responses::{Message, Update},
 };
+use mozitahub;
 
 fn main() {
     let _matches = App::new("mozitahub")
