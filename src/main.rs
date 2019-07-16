@@ -1,14 +1,14 @@
 use std::env;
 
 use clap::App;
-use futures::stream::Stream;
 use futures::future::Future;
+use futures::stream::Stream;
 use log::info;
 use mozitahub;
 use rutebot::{
     client::Rutebot,
-    responses::{Message, Update, Chat},
     requests::{GetUpdates, SendMessage},
+    responses::{Chat, Message, Update},
 };
 
 fn main() {
@@ -38,7 +38,6 @@ fn main() {
                 }) => {
                     println!("message: {} {:?} {}", message_id, chat, text);
                     send_text(&format!("{} from Rust :)", text), &chat, &tlgrm_bot)
-
                 }
                 Err(e) => {
                     eprintln!("Update failed: {}", e);
